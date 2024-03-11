@@ -1,13 +1,15 @@
-Welcome to Lumache's documentation!
+Welcome to rlPx4Controller's documentation!
 ===================================
 
-**Lumache** (/lu'make/) is a Python library for cooks and food lovers
-that creates recipes mixing random ingredients.
-It pulls data from the `Open Food Facts database <https://world.openfoodfacts.org/>`_
-and offers a *simple* and *intuitive* API.
+**rlPx4Controller** is a quadcopter control library implemented in C++ and provides a python interface through pybind11. The implementation of the controller is consistent with the Px4 flight control to ensure the consistency of sim2real.
 
-Check out the :doc:`usage` section for further information, including
-how to :ref:`installation` the project.
+4 modules have been implemented so far
+
+- PolyTrajGen: Fifth degree polynomial trajectory generation
+- Lemniscate:  Figure-eight curve generation
+- pyControl: Single aircraft controller
+- pyParallelControl：Multi-aircraft controller for reinforcement learning
+
 
 .. note::
 
